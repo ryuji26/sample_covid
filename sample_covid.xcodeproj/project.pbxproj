@@ -16,6 +16,7 @@
 		464CCF872767449C00DAA6B3 /* sample_covidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCF862767449C00DAA6B3 /* sample_covidTests.swift */; };
 		464CCF912767449C00DAA6B3 /* sample_covidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCF902767449C00DAA6B3 /* sample_covidUITests.swift */; };
 		464CCF932767449C00DAA6B3 /* sample_covidUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCF922767449C00DAA6B3 /* sample_covidUITestsLaunchTests.swift */; };
+		464CCFA0276744C600DAA6B3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCF9F276744C600DAA6B3 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		464CCF8C2767449C00DAA6B3 /* sample_covidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sample_covidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		464CCF902767449C00DAA6B3 /* sample_covidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_covidUITests.swift; sourceTree = "<group>"; };
 		464CCF922767449C00DAA6B3 /* sample_covidUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_covidUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		464CCF9F276744C600DAA6B3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				464CCF6F2767449800DAA6B3 /* AppDelegate.swift */,
 				464CCF712767449800DAA6B3 /* SceneDelegate.swift */,
+				464CCF9F276744C600DAA6B3 /* Colors.swift */,
 				464CCF732767449800DAA6B3 /* ViewController.swift */,
 				464CCF752767449800DAA6B3 /* Main.storyboard */,
 				464CCF782767449C00DAA6B3 /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				464CCF742767449800DAA6B3 /* ViewController.swift in Sources */,
+				464CCFA0276744C600DAA6B3 /* Colors.swift in Sources */,
 				464CCF702767449800DAA6B3 /* AppDelegate.swift in Sources */,
 				464CCF722767449800DAA6B3 /* SceneDelegate.swift in Sources */,
 			);
