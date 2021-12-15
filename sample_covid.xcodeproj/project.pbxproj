@@ -17,6 +17,8 @@
 		464CCF912767449C00DAA6B3 /* sample_covidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCF902767449C00DAA6B3 /* sample_covidUITests.swift */; };
 		464CCF932767449C00DAA6B3 /* sample_covidUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCF922767449C00DAA6B3 /* sample_covidUITestsLaunchTests.swift */; };
 		464CCFA0276744C600DAA6B3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCF9F276744C600DAA6B3 /* Colors.swift */; };
+		464CCFA2276A0EB300DAA6B3 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCFA1276A0EB300DAA6B3 /* Entity.swift */; };
+		464CCFA4276A0F7900DAA6B3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCFA3276A0F7900DAA6B3 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		464CCF902767449C00DAA6B3 /* sample_covidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_covidUITests.swift; sourceTree = "<group>"; };
 		464CCF922767449C00DAA6B3 /* sample_covidUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_covidUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		464CCF9F276744C600DAA6B3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		464CCFA1276A0EB300DAA6B3 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		464CCFA3276A0F7900DAA6B3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				464CCF712767449800DAA6B3 /* SceneDelegate.swift */,
 				464CCF9F276744C600DAA6B3 /* Colors.swift */,
 				464CCF732767449800DAA6B3 /* ViewController.swift */,
+				464CCFA1276A0EB300DAA6B3 /* Entity.swift */,
+				464CCFA3276A0F7900DAA6B3 /* API.swift */,
 				464CCF752767449800DAA6B3 /* Main.storyboard */,
 				464CCF782767449C00DAA6B3 /* Assets.xcassets */,
 				464CCF7A2767449C00DAA6B3 /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				464CCF742767449800DAA6B3 /* ViewController.swift in Sources */,
+				464CCFA2276A0EB300DAA6B3 /* Entity.swift in Sources */,
 				464CCFA0276744C600DAA6B3 /* Colors.swift in Sources */,
 				464CCF702767449800DAA6B3 /* AppDelegate.swift in Sources */,
+				464CCFA4276A0F7900DAA6B3 /* API.swift in Sources */,
 				464CCF722767449800DAA6B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
