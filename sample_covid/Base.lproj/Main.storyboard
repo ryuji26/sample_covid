@@ -30,7 +30,7 @@
         <!--Chart View Controller-->
         <scene sceneID="3rn-Fg-olK">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="tJt-q2-zT4" customClass="ChartViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="tJt-q2-zT4" customClass="ChartViewController" customModule="sample_covid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0X-uS-Noy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="U9P-s4-8pd"/>
+                    <connections>
+                        <segue destination="YB6-Rn-Nab" kind="show" identifier="goCircle" id="3Uk-jv-Vwf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caE-J1-hkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="792"/>
+            <point key="canvasLocation" x="122" y="860"/>
+        </scene>
+        <!--Circle Chart View Controller-->
+        <scene sceneID="I0Z-zn-fva">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="YB6-Rn-Nab" customClass="CircleChartViewController" customModule="sample_covid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yLp-eb-pXI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Pwn-9E-gdC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FA1-dX-399"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osv-Oq-bhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="860"/>
         </scene>
         <!--Health Check View Controller-->
         <scene sceneID="AHH-QQ-8CS">

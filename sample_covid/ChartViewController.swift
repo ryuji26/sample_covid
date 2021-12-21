@@ -14,6 +14,8 @@ class ChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("表示")
+
         // Do any additional setup after loading the view.
 
         let gradientLayer = CAGradientLayer()
@@ -26,7 +28,7 @@ class ChartViewController: UIViewController {
         let backButton = UIButton(type: .system)
         backButton.frame = CGRect(x: 10, y: 30, width: 20, height: 20)
         backButton.setImage(UIImage(named: "back"), for: .normal)
-        backButton.tintColor  = Colors.white
+        backButton.tintColor  = colors.white
         backButton.titleLabel?.font = .systemFont(ofSize: 20)
         backButton.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
         view.addSubview(backButton)
@@ -54,6 +56,25 @@ class ChartViewController: UIViewController {
         searchBar.tintColor = colors.blue
         view.addSubview(searchBar)
 
+        let uiView = UIView()
+        uiView.frame = CGRect(x: 10, y: 480, width: view.frame.size.width - 20, height: 167)
+        uiView.layer.cornerRadius = 10
+        uiView.backgroundColor = .white
+        uiView.layer.shadowColor = colors.black.cgColor
+        uiView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        uiView.layer.shadowOpacity = 0.4
+        uiView.layer.shadowRadius = 10
+        view.addSubview(uiView)
+
+        bottomLabel(uiView, 1, 10, text: "東京", size: 30, weight: .ultraLight, color: colors.black)
+        bottomLabel(uiView, 0.39, 50, text: "PCR数", size: 15, weight: .bold, color: colors.bluePurple)
+        bottomLabel(uiView, 0.39, 85, text: "222222", size: 30, weight: .bold, color: colors.blue)
+        bottomLabel(uiView, 1, 50, text: "感染者数", size: 15, weight: .bold, color: colors.bluePurple)
+        bottomLabel(uiView, 1, 85, text: "22222", size: 30, weight: .bold, color: colors.blue)
+        bottomLabel(uiView, 1.61, 50, text: "死者数", size: 15, weight: .bold, color: colors.bluePurple)
+        bottomLabel(uiView, 1.61, 85, text: "2222", size: 30, weight: .bold, color: colors.blue)
+
+        view.backgroundColor = .systemGroupedBackground
     }
 
     @objc func switchAction(sender: UISegmentedControl) {
@@ -74,22 +95,20 @@ class ChartViewController: UIViewController {
     }
 
     @objc func goCircle() {
-
-
-
         print("tappeedNextButton")
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func bottomLabel(_ parentView: UIView, _ x: CGFloat, _ y: CGFloat, text: String, size: CGFloat, weight: UIFont.Weight, color: UIColor) {
+        let label = UILabel()
+        label.text = text
+        label.textColor = color
+        label.textAlignment = .center
+        label.adjustsFontSizeToFitWidth = true
+        label.font = .systemFont(ofSize: size, weight: weight)
+        label.frame = CGRect(x: 0, y: y, width: parentView.frame.size.width / 3.5, height: 50)
+        label.center.x = view.center.x * x - 10
+        parentView.addSubview(label)
     }
-    */
 
 }
 
