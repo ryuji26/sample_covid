@@ -23,6 +23,7 @@
 		464CCFA6276B5EAF00DAA6B3 /* HealthCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CCFA5276B5EAF00DAA6B3 /* HealthCheckViewController.swift */; };
 		465E4FE82771BF6E000562E6 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E4FE72771BF6E000562E6 /* ChartViewController.swift */; };
 		465E4FEC2771C088000562E6 /* CircleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E4FEB2771C088000562E6 /* CircleChartViewController.swift */; };
+		465E4FEE277469D9000562E6 /* CovidSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E4FED277469D9000562E6 /* CovidSingleton.swift */; };
 		54CB16E804D0BAA4C07D736D /* Pods_sample_covid_sample_covidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FBBB392CF157CC32934735 /* Pods_sample_covid_sample_covidUITests.framework */; };
 		6ED81D56FB7FDE567F29041A /* Pods_sample_covid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87ED4ACE162BE908F1B5200 /* Pods_sample_covid.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		464CCFA5276B5EAF00DAA6B3 /* HealthCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckViewController.swift; sourceTree = "<group>"; };
 		465E4FE72771BF6E000562E6 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		465E4FEB2771C088000562E6 /* CircleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleChartViewController.swift; sourceTree = "<group>"; };
+		465E4FED277469D9000562E6 /* CovidSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidSingleton.swift; sourceTree = "<group>"; };
 		A2251F731EA8C0F9993ACB9D /* Pods-sample_covid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample_covid.release.xcconfig"; path = "Target Support Files/Pods-sample_covid/Pods-sample_covid.release.xcconfig"; sourceTree = "<group>"; };
 		A87ED4ACE162BE908F1B5200 /* Pods_sample_covid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample_covid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9469E6C473F56DF0F4A60A /* Pods-sample_covid-sample_covidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample_covid-sample_covidUITests.release.xcconfig"; path = "Target Support Files/Pods-sample_covid-sample_covidUITests/Pods-sample_covid-sample_covidUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				464CCF732767449800DAA6B3 /* ViewController.swift */,
 				464CCFA1276A0EB300DAA6B3 /* Entity.swift */,
 				464CCFA3276A0F7900DAA6B3 /* API.swift */,
+				465E4FED277469D9000562E6 /* CovidSingleton.swift */,
 				464CCF752767449800DAA6B3 /* Main.storyboard */,
 				464CCFA5276B5EAF00DAA6B3 /* HealthCheckViewController.swift */,
 				464CCF782767449C00DAA6B3 /* Assets.xcassets */,
@@ -433,6 +436,7 @@
 				464CCF702767449800DAA6B3 /* AppDelegate.swift in Sources */,
 				464CCFA4276A0F7900DAA6B3 /* API.swift in Sources */,
 				464CCF722767449800DAA6B3 /* SceneDelegate.swift in Sources */,
+				465E4FEE277469D9000562E6 /* CovidSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,7 @@ struct CovidInfo: Codable {
 
     struct Prefecture: Codable {
         var id: Int
-        var name_js: String
+        var name_ja: String
         var cases: Int
         var deaths: Int
         var pcr: Int
