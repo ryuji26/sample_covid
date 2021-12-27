@@ -23,7 +23,7 @@ struct CovidAPI {
     }
 
     static func getPrefecture(completion: @escaping ([CovidInfo.Prefecture]) -> Void) {
-        let url = URL(string: "https://covid19-japan-web-api.now.sh/api/v1/prefectures")
+        let url = URL(string: "https://covid19-japan-web-api.vercel.app/api/v1/prefectures")
         let request = URLRequest(url: url!)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
